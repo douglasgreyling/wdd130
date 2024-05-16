@@ -31,23 +31,36 @@ h1, h2, h3, h4, h5, h6 {
 header {
   padding: 20px;
   background-color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+header img {
+  width: 100px;
 }
 
 p {
   padding: 25px;
 }
 
-nav {
+header nav {
   background-color: var(--nav-background-color);
   font-size: 1.2rem;
   display: flex;
+  justify-content: center;
 }
 
-nav a {
+header nav a {
   display: block;
   color: var(--nav-link-color);
   text-decoration: none;
   padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
 }
 
 nav a:link, nav a:visited {
@@ -57,6 +70,26 @@ nav a:link, nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--nav-background-color);
+  padding: 1rem;
+}
+
+footer p {
+  margin-right: auto;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  background-color: transparent;
 }
 
 .hero {
@@ -88,3 +121,19 @@ nav a:hover {
   float: right;
 }
 
+.history div {
+  display: flex;
+}
+
+.adventure div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adventure div figure img {
+  width: 170px;
+}
+
+.adventure div figure {
+  margin: 0;
+}
