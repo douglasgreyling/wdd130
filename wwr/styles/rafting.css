@@ -137,3 +137,56 @@ footer a:hover {
 .adventure div figure {
   margin: 0;
 }
+
+.contact {
+  display: flex;
+}
+
+.contact iframe {
+  border: 0;
+}
+
+.contact p {
+  padding: 0 20px 0 0;
+}
+
+.images {
+  display: flex;
+}
+
+.images img {
+  width: 200px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  flex-direction: row !important;
+}
+
+.checkbox input {
+  float: left;
+}
+
+fieldset {
+  border: 0;
+}
+
+form {
+  border: 1px dashed var(--primary-color);
+  padding: 2rem;
+}
+
+form button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
