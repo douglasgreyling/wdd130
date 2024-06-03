@@ -190,3 +190,56 @@ form button {
 .pb-1 {
   padding-bottom: 1rem;
 }
+
+.trips {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trips img {
+  width: 200px;
+}
+
+.cta {
+  background-color: var(--nav-background-color);
+  padding: 0.5rem 1rem 2.5rem 1rem;
+  text-align: center;
+}
+
+.cta a {
+  color: var(--nav-hover-link-color);
+  text-decoration: none;
+  background-color: var(--nav-hover-background-color);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.cta a:hover {
+  background-color: var(--nav-background-color);
+  color: var(--nav-link-color);
+}
+
+.table {
+  width: 100%;
+}
+
+.table td:not(:first-child) {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.container .item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+}
